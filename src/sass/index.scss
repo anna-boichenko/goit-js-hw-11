@@ -1,2 +1,78 @@
 @import './common';
 @import './example';
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20px 0;
+  margin-bottom: 10px;
+  background-color: blue;
+  & input{
+    padding: 10px 10px;
+    border-radius: 3px;
+    margin-right: 10px;
+    border: none;
+  }
+  & button{
+    padding: 10px 15px;
+    border-radius: 3px;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+  }
+}
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    grid-gap: 20px;
+    max-width: calc(100vw - 80px);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 30px;
+    margin-top: 70px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.photo-card {
+    box-shadow: 5px 5px 8px 2px rgba(0, 0, 0, 0.3);
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.photo-card img {
+    height: 200px;
+    width: 100%;
+    display: block;
+    object-fit: cover;
+}
+
+.info {
+    padding: 10px;
+    display: flex;
+
+
+}
+
+.info-item {
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    text-align: center;
+}
+
+.info-item:not(:last-child) {
+    margin-right: 5px;
+}
+
+
+
+.load-more {
+    margin-top: 20px;
+}
+
+.btnLoad {
+    text-align: center;
+}
